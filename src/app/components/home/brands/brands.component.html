@@ -1,0 +1,8 @@
+<ngx-slick-carousel class="carousel my-4 brands p-3"
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig" 
+                          >
+                            <div ngxSlickItem *ngFor="let brand of slides" class="slide" class="position-relative">
+                                   <img [src]="brand.img" class="w-50">
+                                </div>
+    </ngx-slick-carousel>

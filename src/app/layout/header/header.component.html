@@ -1,0 +1,72 @@
+<section class="header ">
+    <div class="px-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-between" style="border-bottom: 1px solid #ffffff3b;">
+            <p>Hotline: (+100) 123 456 7890</p>
+            <p>Welcome to our market!</p>
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-flex  align-items-center gap-2 pointer">
+                    <p class="mb-0">WISHLIST</p>
+                    <span>(0)</span>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                   <i class="fa-solid fa-user fa-xl me-2" style="color: #fcfcfc;"></i>
+                       Account
+                    </button>
+                    <ul class="dropdown-menu w-100 p-3" aria-labelledby="dropdownMenuButton1">
+                    <li class="d-flex align-items-center gap-3 mb-2">
+                     <i class="fa-solid fa-user fa-xl"></i>
+                     <p class="m-0">Emilio</p>
+                     </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="d-flex align-items-center gap-3 mb-2">
+                    <i class="fa-solid fa-gear"></i>
+                       Setting
+                     </li>
+                     <li class="d-flex align-items-center gap-3 mb-2">
+                        <i class="fa-regular fa-circle-question"></i>
+                        Help
+                      </li>
+                     <li><hr class="dropdown-divider"></li>
+                     <li class="d-flex align-items-center gap-3 mb-2">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                       LogOut
+                     </li>
+                    </ul>
+                  </div>
+            </div>
+            
+        </div>
+        <div class="d-flex align-items-baseline my-4 align-items-sm-center flex-wrap flex-md-nowrap justify-content-center justify-content-md-between gap-2">
+            <h2>EMPORIUM</h2>
+            <div class="container">
+                <div class="row height d-flex flex-wrap justify-content-center align-items-center">
+                  <div class="col-md-6">
+                    <div class="form">
+                       <i class="fa-solid fa-magnifying-glass" style="color: #bfbfbf;"></i>
+                      <input type="text" class="form-control form-input" placeholder="Search anything...">
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+              </div>
+        
+              <div class="dropdown  position-relative">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="cartvalue">{{cartvalue}}</span>
+                  <i class="fa-solid fa-cart-plus fa-xl me-2" style="color: #fcfcfc;"></i>
+                 Shopping Cart
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                  <li class="d-flex justify-content-around">
+                    <p>{{cartvalue}} Item</p>
+                    <a class=" text-black" routerLink="/cart">View Cart</a>
+                </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,58 @@
+.header{
+    color: white;
+    background: #689f38;
+    padding: 1rem 0rem;
+}
+.form{
+
+    position: relative;
+}
+
+.form .fa-magnifying-glass{
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+
+.form span{
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+    height: 50px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+
+.dropdown button{
+    color: white;
+    box-shadow: none;
+}
+.cartvalue{
+        position: absolute;
+        top: -0.3rem;
+        left: 1.2rem;
+        background: red;
+        border-radius: 50%;
+        width: 19px;
+}

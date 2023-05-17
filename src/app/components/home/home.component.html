@@ -1,0 +1,107 @@
+<ngx-slick-carousel class="carousel my-4"
+                        #slickModal="slick-carousel"
+                        [config]="slideConfig" 
+                        (init)="slickInit($event)"
+                      >
+                            <div ngxSlickItem *ngFor="let slide of slides" class="slide" class="position-relative">
+                                    <div [ngStyle]="{'backgroundImage':'url('+slide.img+')',
+                                    'background-size': 'cover','height': '35rem',
+                                        'background-position-y': '-450px'}">
+                                    </div>
+                                <div class="overlay d-flex flex-column justify-content-center align-items-center text-capitalize">
+                                    <h1>{{slide.title}}</h1>
+                                    <p>{{slide.subtitle}}</p>  
+                                    <button class="btn button">Shop Now</button>
+                                </div>
+                                </div>
+    </ngx-slick-carousel>
+
+    <section class="advantages p-3">
+        <div class="row">
+            <ng-container *ngFor="let advantage of advantages">
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center gap-4">
+                    <div>
+                        <i [class]="advantage.icon"></i>
+                    </div>
+                    <div>
+                        <h6>{{advantage.title}}</h6>
+                        <p>{{advantage.subtitle}}</p>
+                    </div>
+                </div>
+
+            </ng-container>
+        </div>
+    </section>
+
+    <section class="products p-3">
+        <div class="row">
+                <div class="col-lg-6">
+                    <div class="position-relative product">
+                     <img [src]="products[0].img"  class="w-100 shadow-1-strong rounded mb-4">
+                     <div class="detail">
+                        <h4>{{products[0].title}}</h4>
+                        <p>{{products[0].subtitle}}</p>
+                        <button class="btn button">Shop Now</button>
+                     </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 position-relative product">
+                            <img [src]="products[3].img"  class="w-100 shadow-1-strong rounded mb-4" style="height: 12rem;object-fit: cover;">
+                            <div class="detail">
+                               <h4>{{products[3].title}}</h4>
+                               <p>{{products[3].subtitle}}</p>
+                               <button class="btn button">Shop Now</button>
+                            </div>
+                           </div>
+                           <div class="col-lg-6 position-relative product">
+                            <img [src]="products[4].img"  class="w-100 shadow-1-strong rounded mb-4" style="height: 12rem;object-fit: cover;">
+                            <div class="detail">
+                               <h4>{{products[4].title}}</h4>
+                               <p>{{products[4].subtitle}}</p>
+                               <button class="btn button">Shop Now</button>
+                            </div>
+                           </div> 
+                    </div>
+                  
+                </div>
+                <div class="col-lg-6">
+                       <div class="row">
+                           <div class="col-lg-6 position-relative product">
+                               <img [src]="products[1].img"  class="w-100 shadow-1-strong rounded mb-4" style="height:12rem">
+                               <div class="detail">
+                                  <h4>{{products[1].title}}</h4>
+                                  <p>{{products[1].subtitle}}</p>
+                                  <button class="btn button">Shop Now</button>
+                               </div>
+                              </div>
+                              <div class="col-lg-6 position-relative product">
+                               <img [src]="products[2].img"  class="w-100 shadow-1-strong rounded mb-4" style="height:12rem">
+                               <div class="detail">
+                                  <h4>{{products[2].title}}</h4>
+                                  <p>{{products[2].subtitle}}</p>
+                                  <button class="btn button">Shop Now</button>
+                               </div>
+                              </div> 
+                       </div>
+                       <div class="position-relative product">
+                        <img [src]="products[5].img"  class="w-100 shadow-1-strong rounded mb-4">
+                        <div class="detail">
+                           <h4>{{products[5].title}}</h4>
+                           <p>{{products[5].subtitle}}</p>
+                           <button class="btn button">Shop Now</button>
+                        </div>
+                       </div>
+                </div>
+
+                </div>
+                </section>
+
+                <section>
+                    <app-products></app-products>
+                </section>
+
+
+                <section>
+                    <app-brands></app-brands>
+                </section>
+

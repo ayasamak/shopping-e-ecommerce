@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import 'primeflex/primeflex.scss';
+
+p{
+    margin: 0;
+}
+.pointer{
+    cursor: pointer;
+}
+.button{
+    background: #689f38 !important;
+    border: 1px solid #689f38 !important;
+    color: white !important;
+    }
+.navbar-nav .nav-link.active{
+    color: rgb(104 159 56) !important;
+}
+.slick-dots {
+    bottom: 16px !important
+}
+.slick-next {
+    right: 33px !important;
+}
+.slick-prev {
+    left: 33px !important;
+    z-index: 9999;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 30px !important;
+}
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    border-color: #689f38;
+    color: #689f38;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    margin: 0 0px -1px 0;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none
+}
+.p-tabview-nav {
+    justify-content: space-around;
+}
+.p-dataview .p-dataview-emptymessage {
+    padding: 1.25rem;
+    text-align: center;
+}
